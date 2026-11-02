@@ -90,3 +90,28 @@ def odt_to_pdf(source: Path, output_dir: Path) -> Path:
 @converter(".docx", ".odt")
 def docx_to_odt(source: Path, output_dir: Path) -> Path:
     return run_libreoffice(source, output_dir, ".odt")
+
+
+@converter(".txt", ".pdf")
+def txt_to_pdf(source: Path, output_dir: Path) -> Path:
+    return run_libreoffice(source, output_dir, ".pdf")
+
+
+@converter(".txt", ".docx")
+def txt_to_docx(source: Path, output_dir: Path) -> Path:
+    return run_libreoffice(source, output_dir, ".docx")
+
+
+@converter(".txt", ".odt")
+def txt_to_odt(source: Path, output_dir: Path) -> Path:
+    return run_libreoffice(source, output_dir, ".odt")
+
+
+@converter(".docx", ".txt")
+def docx_to_txt(source: Path, output_dir: Path) -> Path:
+    return run_libreoffice(source, output_dir, ".txt")
+
+
+@converter(".odt", ".txt")
+def odt_to_txt(source: Path, output_dir: Path) -> Path:
+    return run_libreoffice(source, output_dir, ".txt")
