@@ -22,7 +22,7 @@ Do obsługi konwersji dokumentów biurowych oraz plików PDF wymagana jest insta
    cd FileShift
    
    python -m venv venv
-   .\.venv\Scripts\activate
+   .\venv\Scripts\activate
    
    pip install -r requirements.txt
    
