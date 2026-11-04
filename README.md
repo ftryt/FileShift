@@ -18,7 +18,7 @@ Do obsługi konwersji dokumentów biurowych oraz plików PDF wymagana jest insta
 ## 🚀 Instrukcja instalacji i uruchomienia
 
 ```bash
-   git clone [https://github.com/ftryt/FileShift](https://github.com/ftryt/FileShift)
+   git clone https://github.com/ftryt/FileShift
    cd FileShift
    
    python -m venv venv
